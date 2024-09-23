@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Sumit Kumar - @Sumit21adm
+# Hello World, It's Sumit Here
 - 👀 I’m interested in Software Development Projects, Data Analytics, Full Stack Development.
 - 🌱 I’m currently learning How to implement my skills in Business/ Industries.
 - 📫 How to reach me ... 📞 8727864921 📨 sumit21adm@gmail.com
