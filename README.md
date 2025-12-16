@@ -1,10 +1,6 @@
 # Sumit Kumar — Senior SDE
-
-![Followers](https://img.shields.io/github/followers/sumit21adm)
-![GitHub Stars](https://img.shields.io/github/stars/Sumit21adm/Sumit21adm?label=Stars&style=social)
-![Repo Size](https://img.shields.io/github/repo-size/Sumit21adm/Sumit21adm?label=Repo%20Size)
-![GitHub Top Language](https://img.shields.io/github/languages/top/Sumit21adm/Sumit21adm)
-![Last Commit](https://img.shields.io/github/last-commit/Sumit21adm/Sumit21adm?label=Last%20Commit)
+| [![Corporate Profile](https://github.com/sumku-n.png?size=50)](https://github.com/sumku-n) | **[sumku-n - Overview](https://github.com/sumku-n)**<br>Viking PA | ![Followers](https://img.shields.io/github/followers/sumit21adm)![GitHub Stars](https://img.shields.io/github/stars/Sumit21adm/Sumit21adm?label=Stars&style=social)![Repo Size](https://img.shields.io/github/repo-size/Sumit21adm/Sumit21adm?label=Repo%20Size)![GitHub Top Language](https://img.shields.io/github/languages/top/Sumit21adm/Sumit21adm)![Last Commit](https://img.shields.io/github/last-commit/Sumit21adm/Sumit21adm?label=Last%20Commit) |
+|:-------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|
 
 ---
 
