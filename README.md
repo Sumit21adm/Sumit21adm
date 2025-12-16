@@ -10,3 +10,6 @@ You can click the Preview link to take a look at your changes.
 
 ## 🌐 Portfolio Website
 Visit my portfolio at: **[https://sumit21adm.github.io/Sumit21adm](https://sumit21adm.github.io/Sumit21adm)**
+
+## 🌐 Corporate Profile
+Visit my corporate GitHub profile at: **[https://github.com/sumku-n](https://github.com/sumku-n)**
