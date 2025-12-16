@@ -1,5 +1,14 @@
 # Sumit Kumar — Senior SDE
 
+![Code Quality](https://img.shields.io/codefactor/grade/github/Sumit21adm/Sumit21adm?label=Code%20Quality)
+![Lines of Code](https://img.shields.io/tokei/lines/github/Sumit21adm/Sumit21adm?label=Lines%20of%20Code)
+![Repo Size](https://img.shields.io/github/repo-size/Sumit21adm/Sumit21adm?label=Repo%20Size)
+![GitHub Top Language](https://img.shields.io/github/languages/top/Sumit21adm/Sumit21adm)
+![Last Commit](https://img.shields.io/github/last-commit/Sumit21adm/Sumit21adm?label=Last%20Commit)
+![GitHub Stars](https://img.shields.io/github/stars/Sumit21adm/Sumit21adm?label=Stars&style=social)
+
+---
+
 ## About Me
 I am a highly innovative and performance-driven **Senior SDE** with over **3 years of experience** in the Payments and FinTech domain. My skillset includes developing and maintaining **POS payment systems**, ensuring **PCI-DSS compliance**, and leveraging **DevOps CI/CD automation** to deliver robust products. An advocate for **AI-driven productivity tools**, I strive to design solutions that combine efficiency, security, and client satisfaction.
 
