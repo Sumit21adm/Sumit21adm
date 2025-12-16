@@ -13,3 +13,7 @@ Visit my portfolio at: **[https://sumit21adm.github.io/Sumit21adm](https://sumit
 
 ## 🌐 Corporate Profile
 Visit my corporate GitHub profile at: **[https://github.com/sumku-n](https://github.com/sumku-n)**
+
+[![Corporate Profile](https://github.com/sumku-n.png?size=75)](https://github.com/sumku-n)
+**[sumku-n - Overview](https://github.com/sumku-n)**
+GitHub.com
