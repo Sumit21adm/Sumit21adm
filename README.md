@@ -1,7 +1,5 @@
 # Sumit Kumar — Senior SDE
 
-![Code Quality](https://img.shields.io/codefactor/grade/github/Sumit21adm/Sumit21adm?label=Code%20Quality)
-![Lines of Code](https://img.shields.io/tokei/lines/github/Sumit21adm/Sumit21adm?label=Lines%20of%20Code)
 ![Repo Size](https://img.shields.io/github/repo-size/Sumit21adm/Sumit21adm?label=Repo%20Size)
 ![GitHub Top Language](https://img.shields.io/github/languages/top/Sumit21adm/Sumit21adm)
 ![Last Commit](https://img.shields.io/github/last-commit/Sumit21adm/Sumit21adm?label=Last%20Commit)
