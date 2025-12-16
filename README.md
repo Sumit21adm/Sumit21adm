@@ -82,4 +82,4 @@ I am a highly innovative and performance-driven **Senior SDE** with over **3 yea
 
 ---
 
-### "Passionate about exploring emerging AI-driven innovations to continuously improve productivity and stay ahead in the tech landscape."
+## "Passionate about exploring emerging AI-driven innovations to continuously improve productivity and stay ahead in the tech landscape."
