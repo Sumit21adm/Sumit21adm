@@ -676,6 +676,13 @@ footer {
     color: var(--text-muted);
 }
 
+@media (max-width: 768px) {
+    footer {
+        padding-bottom: 6rem;
+        /* Extra space for floating social bar */
+    }
+}
+
 /* Animations */
 @keyframes fadeDown {
     from {
