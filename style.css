@@ -479,9 +479,11 @@ footer {
     }
 
     .nav-links .nav-link:hover {
-        color: var(--primary);
-        background: rgba(16, 185, 129, 0.1);
-        text-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+        color: var(--text-main);
+        background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(20, 184, 166, 0.1));
+        text-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+        transform: scale(1.05);
+        border: 1px solid rgba(16, 185, 129, 0.3);
     }
 
     /* Staggered animation for menu items */
