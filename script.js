@@ -50,6 +50,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: offsetPosition,
                 behavior: "smooth"
             });
+
+            // Update URL hash without triggering scroll
+            history.pushState(null, null, targetId);
         }
     });
 });
