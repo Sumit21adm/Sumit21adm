@@ -238,7 +238,7 @@ img {
 /* Mobile Header - Floating logo and hamburger */
 @media (max-width: 768px) {
 
-    /* Hide the full navbar on mobile */
+    /* Transparent navbar by default, blur when scrolled */
     .navbar {
         background: transparent !important;
         border-bottom: none !important;
@@ -246,8 +246,9 @@ img {
     }
 
     .navbar.scrolled {
-        background: transparent !important;
-        backdrop-filter: none !important;
+        background: rgba(10, 22, 40, 0.85) !important;
+        backdrop-filter: blur(15px) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
 
     /* Hide nav links on mobile (use fullscreen overlay instead) */
