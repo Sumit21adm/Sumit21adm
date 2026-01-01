@@ -78,34 +78,59 @@ window.addEventListener('scroll', () => {
 });
 
 // Scroll Reveal Animation (Intersection Observer)
-const revealElements = document.querySelectorAll('.glass-card, .section-header, .timeline-item');
-
-const revealOptions = {
-    threshold: 0.1,
+const observerOptions = {
+    threshold: 0.15,
     rootMargin: "0px 0px -50px 0px"
 };
 
-const revealOnScroll = new IntersectionObserver(function (entries, revealOnScroll) {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('revealed');
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            revealOnScroll.unobserve(entry.target);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
         }
     });
-}, revealOptions);
+}, observerOptions);
 
-revealElements.forEach(el => {
-    // Set initial state for animation
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'all 0.6s ease-out';
+document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
 
-    revealOnScroll.observe(el);
-});
+// Typing Effect
+const typingElement = document.querySelector('.typing-text');
+const texts = ["Payment Systems", "Scalable Solutions", "Global Tech Platforms"];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeSpeed = 100;
+
+function type() {
+    if (!typingElement) return;
+
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+    } else {
+        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+    }
+
+    if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        typeSpeed = 2000; // Pause at end
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typeSpeed = 500; // Pause before new text
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+// Start typing effect
+document.addEventListener('DOMContentLoaded', type);
 
 // Set current year in footer
 const yearEl = document.getElementById('current-year');
