@@ -103,49 +103,63 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
 
-// Typing Effect
-const typingElement = document.querySelector('.typing-text');
-const texts = [
-    "Payment Systems",
-    "Cloud Architecture",
-    "AI-Native Development",
-    "Digital Transformation",
-    "E-Commerce Solutions"
-];
-let textIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-let typeSpeed = 100;
-
-function type() {
+// Reusable Typing Effect
+function initTyping(selector, texts) {
+    const typingElement = document.querySelector(selector);
     if (!typingElement) return;
 
-    const currentText = texts[textIndex];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
 
-    if (isDeleting) {
-        typingElement.textContent = currentText.substring(0, charIndex - 1);
-        charIndex--;
-        typeSpeed = 50;
-    } else {
-        typingElement.textContent = currentText.substring(0, charIndex + 1);
-        charIndex++;
-        typeSpeed = 100;
+    function type() {
+        const currentText = texts[textIndex];
+
+        if (isDeleting) {
+            typingElement.textContent = currentText.substring(0, charIndex - 1);
+            charIndex--;
+            typeSpeed = 50;
+        } else {
+            typingElement.textContent = currentText.substring(0, charIndex + 1);
+            charIndex++;
+            typeSpeed = 100;
+        }
+
+        if (!isDeleting && charIndex === currentText.length) {
+            isDeleting = true;
+            typeSpeed = 2000; // Pause at end
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % texts.length;
+            typeSpeed = 500; // Pause before new text
+        }
+
+        setTimeout(type, typeSpeed);
     }
 
-    if (!isDeleting && charIndex === currentText.length) {
-        isDeleting = true;
-        typeSpeed = 2000; // Pause at end
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        textIndex = (textIndex + 1) % texts.length;
-        typeSpeed = 500; // Pause before new text
-    }
-
-    setTimeout(type, typeSpeed);
+    type();
 }
 
-// Start typing effect
-document.addEventListener('DOMContentLoaded', type);
+// Start typing effects on load
+document.addEventListener('DOMContentLoaded', () => {
+    // Home Page Typing
+    initTyping('.typing-text', [
+        "Payment Systems",
+        "Cloud Architecture",
+        "AI-Native Development",
+        "Digital Transformation",
+        "E-Commerce Solutions"
+    ]);
+
+    // Consulting Page Typing
+    initTyping('.typing-text-consulting', [
+        "Global Brands",
+        "Digital Empires",
+        "SaaS Products",
+        "Growth Strategies"
+    ]);
+});
 
 // Set current year in footer
 const yearEl = document.getElementById('current-year');
