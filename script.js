@@ -17,8 +17,11 @@ window.addEventListener('scroll', () => {
 if (hamburger) {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
-        hamburger.firstChild.classList.toggle('fa-times');
-        hamburger.firstChild.classList.toggle('fa-bars');
+        const icon = hamburger.querySelector('i');
+        if (icon) {
+            icon.classList.toggle('fa-times');
+            icon.classList.toggle('fa-bars');
+        }
     });
 }
 
@@ -27,8 +30,11 @@ links.forEach(link => {
     link.addEventListener('click', () => {
         if (navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
-            hamburger.firstChild.classList.remove('fa-times');
-            hamburger.firstChild.classList.add('fa-bars');
+            const icon = hamburger.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
         }
     });
 });
