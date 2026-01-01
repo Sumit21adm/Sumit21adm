@@ -287,6 +287,20 @@ img {
     .social-float {
         display: flex !important;
     }
+
+    /* Center hero content better on mobile */
+    .hero {
+        padding-top: 60px;
+        /* Reduced from header-height */
+        padding-bottom: 100px;
+        /* Account for social links at bottom */
+        min-height: 100vh;
+        justify-content: center;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
 }
 
 /* Navigation */
