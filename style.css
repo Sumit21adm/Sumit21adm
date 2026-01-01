@@ -7,23 +7,23 @@
  */
 
 :root {
-    /* Color Palette */
-    --bg-dark: #0f172a;
-    --bg-card: rgba(30, 41, 59, 0.7);
-    --bg-card-hover: rgba(51, 65, 85, 0.8);
+    /* Color Palette - Green/Teal/Yellow Theme */
+    --bg-dark: #0a1628;
+    --bg-card: rgba(16, 42, 67, 0.7);
+    --bg-card-hover: rgba(26, 58, 90, 0.8);
 
-    --primary: #6366f1;
-    /* Indigo */
-    --secondary: #a855f7;
-    /* Purple */
-    --accent: #38bdf8;
-    /* Sky Blue */
+    --primary: #10b981;
+    /* Emerald Green */
+    --secondary: #14b8a6;
+    /* Teal */
+    --accent: #facc15;
+    /* Yellow */
 
-    --text-main: #f8fafc;
+    --text-main: #f0fdf4;
     --text-muted: #94a3b8;
 
     --gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
-    --gradient-glow: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    --gradient-glow: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
 
     /* Effects */
     --glass-border: 1px solid rgba(255, 255, 255, 0.1);
@@ -640,7 +640,7 @@ footer {
 .hero::before {
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.6) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.5) 0%, transparent 70%);
     top: -200px;
     left: -100px;
     animation-delay: 0s;
@@ -649,7 +649,7 @@ footer {
 .hero::after {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(168, 85, 247, 0.5) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(20, 184, 166, 0.4) 0%, transparent 70%);
     bottom: -150px;
     right: -100px;
     animation-delay: -7s;
