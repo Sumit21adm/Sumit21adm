@@ -368,6 +368,123 @@ img {
     width: 100%;
 }
 
+/* Icon Navigation Styles */
+.nav-link-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link.icon-only {
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    color: var(--text-muted);
+}
+
+.nav-link.icon-only:hover,
+.nav-link.icon-only.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.nav-link.icon-only::after {
+    display: none;
+    /* No underline for icons */
+}
+
+/* Tooltip */
+.nav-tooltip {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    color: var(--text-main);
+}
+
+.nav-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 8px;
+    height: 8px;
+    background: inherit;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-item:hover .nav-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Consulting Icon Distinction */
+.nav-link.icon-only.consulting-icon {
+    color: var(--accent);
+    border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+.nav-link.icon-only.consulting-icon:hover {
+    background: rgba(244, 114, 182, 0.1);
+    box-shadow: 0 0 15px rgba(244, 114, 182, 0.2);
+}
+
+/* Mobile Menu Adjustments */
+@media (max-width: 768px) {
+    .nav-link-item {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .nav-link.icon-only {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        background: none !important;
+        font-size: 1.1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-tooltip {
+        /* On mobile, convert tooltip to text label next to icon */
+        position: static;
+        transform: none;
+        opacity: 1;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        backdrop-filter: none;
+        font-size: 1.1rem;
+        color: var(--text-main);
+    }
+
+    .nav-tooltip::before {
+        display: none;
+    }
+}
+
 /* Navbar CTA Button - Differentiated from regular links */
 .nav-link.btn {
     margin-left: 1rem;
