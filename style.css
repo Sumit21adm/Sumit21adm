@@ -426,7 +426,8 @@ img {
 
 @media (max-width: 768px) {
     .scroll-indicator {
-        bottom: 1.5rem;
+        bottom: 5rem;
+        /* Above floating social links */
     }
 
     .scroll-text {
