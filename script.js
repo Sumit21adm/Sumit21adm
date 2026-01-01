@@ -39,7 +39,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        
+
         if (targetElement) {
             // Account for fixed header
             const headerOffset = 80;
@@ -59,7 +59,7 @@ const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -85,7 +85,7 @@ const revealOptions = {
     rootMargin: "0px 0px -50px 0px"
 };
 
-const revealOnScroll = new IntersectionObserver(function(entries, revealOnScroll) {
+const revealOnScroll = new IntersectionObserver(function (entries, revealOnScroll) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
@@ -103,6 +103,12 @@ revealElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'all 0.6s ease-out';
-    
+
     revealOnScroll.observe(el);
 });
+
+// Set current year in footer
+const yearEl = document.getElementById('current-year');
+if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+}
