@@ -1169,3 +1169,9 @@ footer {
     background: rgba(16, 185, 129, 0.1);
     transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+    .hero-visual {
+        display: none;
+    }
+}
