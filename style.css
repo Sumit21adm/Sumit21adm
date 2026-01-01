@@ -204,7 +204,8 @@ img {
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .nav-link {
@@ -212,6 +213,7 @@ img {
     font-weight: 500;
     color: var(--text-muted);
     position: relative;
+    transition: color 0.3s ease;
 }
 
 .nav-link::after {
@@ -231,6 +233,29 @@ img {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+/* Navbar CTA Button - Differentiated from regular links */
+.nav-link.btn {
+    margin-left: 1rem;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    color: var(--primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-link.btn::after {
+    display: none;
+    /* Remove underline effect for button */
+}
+
+.nav-link.btn:hover {
+    background: var(--primary);
+    color: #0a1628;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    transform: translateY(-2px);
 }
 
 .hamburger {
