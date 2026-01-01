@@ -238,17 +238,16 @@ img {
 /* Mobile Header - Floating logo and hamburger */
 @media (max-width: 768px) {
 
-    /* Solid dark background with shadow for clear separation */
+    /* Glass effect navbar with transparency */
     .navbar {
-        background: rgba(5, 15, 30, 0.95) !important;
+        background: rgba(10, 22, 40, 0.7) !important;
         backdrop-filter: blur(20px) !important;
-        border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        box-shadow: none !important;
     }
 
     .navbar.scrolled {
-        background: rgba(10, 22, 40, 0.9) !important;
-        backdrop-filter: blur(20px) !important;
+        background: rgba(10, 22, 40, 0.85) !important;
     }
 
     /* Hide nav links on mobile (use fullscreen overlay instead) */
@@ -262,23 +261,26 @@ img {
         z-index: 1001;
     }
 
-    /* Floating hamburger button styling */
+    /* Clean hamburger button - no background or border */
     .hamburger {
         display: flex !important;
         width: 44px;
         height: 44px;
         align-items: center;
         justify-content: center;
-        background: rgba(10, 22, 40, 0.8);
-        backdrop-filter: blur(10px);
-        border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: transparent;
+        backdrop-filter: none;
+        border-radius: 0;
+        border: none;
         z-index: 1001;
+        font-size: 1.5rem;
+        color: var(--text-main);
     }
 
     .hamburger:hover {
-        background: rgba(16, 185, 129, 0.2);
-        border-color: var(--primary);
+        color: var(--primary);
+        background: transparent;
+        border: none;
     }
 
     /* Show social float at bottom on mobile */
