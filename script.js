@@ -96,7 +96,13 @@ document.querySelectorAll('.hidden').forEach((el) => observer.observe(el));
 
 // Typing Effect
 const typingElement = document.querySelector('.typing-text');
-const texts = ["Payment Systems", "Scalable Solutions", "Global Tech Platforms"];
+const texts = [
+    "Payment Systems",
+    "Cloud Architecture",
+    "AI-Native Development",
+    "Digital Transformation",
+    "E-Commerce Solutions"
+];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
