@@ -461,6 +461,17 @@ footer {
     .hero-title {
         font-size: 2.5rem;
     }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .typing-text {
+        display: block;
+        min-height: 1.2em;
+        /* Prevent layout shift */
+    }
 }
 
 /* Highlight Card for Latest Experience */
