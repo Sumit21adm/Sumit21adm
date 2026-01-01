@@ -238,11 +238,12 @@ img {
 /* Mobile Header - Floating logo and hamburger */
 @media (max-width: 768px) {
 
-    /* Always show blur background on mobile for better distinction */
+    /* Solid dark background with shadow for clear separation */
     .navbar {
-        background: rgba(10, 22, 40, 0.85) !important;
-        backdrop-filter: blur(15px) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+        background: rgba(5, 15, 30, 0.95) !important;
+        backdrop-filter: blur(20px) !important;
+        border-bottom: 1px solid rgba(16, 185, 129, 0.15) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
     }
 
     .navbar.scrolled {
