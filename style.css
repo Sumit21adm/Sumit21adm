@@ -230,6 +230,58 @@ img {
     }
 }
 
+/* Floating Mobile Navigation */
+.mobile-nav-float {
+    display: none;
+    /* Hidden on desktop */
+}
+
+@media (max-width: 768px) {
+    .mobile-nav-float {
+        display: flex;
+        position: fixed;
+        bottom: 1.5rem;
+        bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        background: rgba(10, 22, 40, 0.9);
+        backdrop-filter: blur(15px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000;
+    }
+
+    .mobile-nav-float a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: var(--text-muted);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-nav-float a:hover,
+    .mobile-nav-float a.active {
+        color: var(--primary);
+        background: rgba(16, 185, 129, 0.15);
+    }
+
+    /* Hide hamburger on mobile when floating nav is visible */
+    .hamburger {
+        display: none !important;
+    }
+
+    /* Hide social float on mobile since we have the nav */
+    .social-float {
+        display: none;
+    }
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
