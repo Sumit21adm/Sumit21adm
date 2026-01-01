@@ -643,3 +643,30 @@ footer {
     /* Let clicks pass through to content */
     z-index: 0;
 }
+
+/* Hero Chip Buttons */
+.hero-chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.chip:hover {
+    border-color: var(--primary);
+    color: var(--text-main);
+    background: rgba(99, 102, 241, 0.1);
+}
