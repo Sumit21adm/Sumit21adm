@@ -508,8 +508,10 @@ img {
 
 @media (max-width: 768px) {
     .scroll-indicator {
-        display: none;
-        /* Hide on mobile - social links are visible at bottom */
+        display: flex;
+        /* Show on mobile */
+        bottom: 6rem;
+        /* Above social links bar */
     }
 
     .scroll-text {
